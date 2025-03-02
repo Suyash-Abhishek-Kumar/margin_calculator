@@ -7,11 +7,9 @@ async function margin() {
         return;
     }
 
-    let response = await fetch("https://your-app.onrender.com/margin", {
+    let response = await fetch("https://margin-calculator-2.onrender.com/margin", {
         method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ conducted, absent })
     });
 
