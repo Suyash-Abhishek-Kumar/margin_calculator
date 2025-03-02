@@ -4,6 +4,9 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/')
+def home(): return "Flask Backend is Running!"
+
 @app.route('/margin', methods=['POST'])
 def margin():
     data = request.json
