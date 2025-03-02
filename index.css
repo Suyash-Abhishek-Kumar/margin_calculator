@@ -42,3 +42,12 @@ button {
 button:hover {
     background-color: #4B0082;
 }
+
+.credits {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
